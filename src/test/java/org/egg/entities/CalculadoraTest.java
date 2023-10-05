@@ -12,4 +12,11 @@ public class CalculadoraTest {
 
         assertEquals(9f, calculadora.sumar(), 0.1);
     }
+
+    @Test
+    public void sumarError() {
+        Calculadora calculadora = new Calculadora(4f,5f);
+
+        assertEquals(10f, calculadora.sumar(), 0.1);
+    }
 }
